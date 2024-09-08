@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home/Home";
+import { SnackbarProvider } from 'notistack';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SnackbarProvider
+      maxSnack={3} // Optional: Adjust based on your needs
+      preventDuplicate={true} // Optional: Prevent duplicate snackbars
+      autoHideDuration={3000} // Optional: Duration in milliseconds for auto-hide
+    >
+      <div>
+        <Home />
+      </div>
+    </SnackbarProvider>
   );
 }
 

@@ -1,0 +1,81 @@
+.container {
+  padding: 20px;
+  background-color: #333;
+  min-height: 100vh;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  font-size: 32px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.cardsWrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.transactionsWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.transactionsWrapper .transactionList {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.cardsWrapper .card {
+  background-color: #4d4d4d;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+  color: grey;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card .money {
+  font-size: 36px;
+  color: #4caf50;
+}
+
+.card.expense .money {
+  color: #ed640fd8; /* Red for expense amount */
+}
+
+.card button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button.failure {
+  background-color: #f44336;
+}
+
+.categoryCounts {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.categoryCounts p {
+  font-size: 18px;
+}

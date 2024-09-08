@@ -1,0 +1,59 @@
+.card {
+    background-color: #d3d3d3; /* Light grey background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.success {
+    color: #4caf50; /* Green for success state */
+    font-weight: bold;
+}
+
+.failure {
+    color: #f44336; /* Red for failure state */
+    font-weight: bold;
+}
+
+button.success {
+    background-color: #4caf50; /* Green for Add Income */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.failure {
+    background-color: #f44336; /* Red for Add Expense */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.success:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+button.failure:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
